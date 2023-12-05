@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### clone project
 
-## Available Scripts
+```
+git clone git@github.com:nangongmoyan/i18n-toolkit-demo.git
+```
 
-In the project directory, you can run:
+### npm install
 
-### `npm start`
+```
+cd i18n-toolkit-demo
+npm install 
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+npm start
+```
 
-### `npm test`
+### 页面显示
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9ecc95329b554a6a969f996783dfdb5c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2552&h=1352&s=148108&e=png&b=24272d)
 
-### `npm run build`
+点击 changeLanguage 会切换成另外一个语言
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d754346c99db4ba18eff3188f4202986~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2554&h=1346&s=147674&e=png&b=24272d)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 在VS Code中可以显示语言对应的具体文案
 
-### `npm run eject`
+- 安装VS Code 插件： i18n ally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/681ddfedec964f92a286c3e0a323d379~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2043&h=1315&s=231509&e=png&b=24272d)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 显示英文
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Tips:点击右下角红框可以选择在编辑器中显示对应语言的文本**
 
-## Learn More
+![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0688cbafff7c4bdc8c5691268fa8d586~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2560&h=1074&s=271648&e=png&b=24272d)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 显示中文
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b1aab968018e47acbcc956851371fd03~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2560&h=1074&s=269873&e=png&b=23262c)
 
-### Code Splitting
+### 更换配置
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.首先你需要完成这里面的[前置操作后](https://github.com/nangongmoyan/nangongmoyan-i18n-toolkit)
+2.然后更改`i18n.config.json`配置
+3.删除 `i18n` 文件夹
+4.执行npm intl（命令会将你Google Sheets中的数据拉下来）
+5.现在你就可以在页面中显示你表格中的多语言，并可以在VS Code中进行显示文案，在网页上可以切换语言
+6.最后，拜拜了，感谢你看到这里
