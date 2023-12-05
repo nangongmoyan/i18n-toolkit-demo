@@ -21,7 +21,7 @@ function App () {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {t('70db5534f81b5ffdca31b122cc35068a')}
+          {t('18ab4e073b613a975f86bf6a140497cc')}
         </p>
         <a
           className="App-link"

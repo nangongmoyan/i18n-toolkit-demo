@@ -53,7 +53,7 @@ npm start
 
 3.删除 `i18n` 文件夹
 
-4.执行npm intl（命令会将你Google Sheets中的数据拉下来）
+4.执行npm run intl（命令会将你Google Sheets中的数据拉下来）
 
 5.现在你就可以在页面中显示你表格中的多语言，并可以在VS Code中进行显示文案，在网页上可以切换语言
 
