@@ -1,13 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from 'react';
+import i18n from 'i18next';
 
-function App() {
+function App () {
+  const [value, setValue] = useState('en_US')
+  const { t } = useTranslation()
+
+  const changeLanguage = () => {
+    setValue(value === 'en_US' ? 'zh_CN' : 'en_US')
+  }
+
+  useEffect(() => {
+    i18n.changeLanguage(value);
+  }, [value])
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {t('70db5534f81b5ffdca31b122cc35068a')}
         </p>
         <a
           className="App-link"
@@ -17,6 +31,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={changeLanguage} style={{ marginTop: 20 }}>changeLanguage</button>
       </header>
     </div>
   );
