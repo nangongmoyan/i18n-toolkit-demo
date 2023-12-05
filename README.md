@@ -48,8 +48,13 @@ npm start
 ### 更换配置
 
 1.首先你需要完成这里面的[前置操作后](https://github.com/nangongmoyan/nangongmoyan-i18n-toolkit)
+
 2.然后更改`i18n.config.json`配置
+
 3.删除 `i18n` 文件夹
+
 4.执行npm intl（命令会将你Google Sheets中的数据拉下来）
+
 5.现在你就可以在页面中显示你表格中的多语言，并可以在VS Code中进行显示文案，在网页上可以切换语言
+
 6.最后，拜拜了，感谢你看到这里
